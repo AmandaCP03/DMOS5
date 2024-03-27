@@ -3,15 +3,15 @@ package br.edu.ifsp.arq.ads.dmos5.exercicio4
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.provider.ContactsContract.CommonDataKinds.Phone
 
-class Cliente(private var nome: String, private var email: Email, private var telefone: Phone, private var cpf: String, private var endereco: String, private var cidade: String) {
+class Cliente(private var nome: String, private var email: String, private var telefone: String, private var cpf: String, private var endereco: String, private var cidade: String) {
 
     fun getNome(): String{
         return nome
     }
-    fun getEmail(): Email{
+    fun getEmail(): String {
         return email
     }
-    fun getTelefone(): Phone{
+    fun getTelefone(): String {
         return telefone
     }
     fun getCpf(): String{
@@ -27,10 +27,10 @@ class Cliente(private var nome: String, private var email: Email, private var te
     fun setNome(nome: String){
         this.nome = nome;
     }
-    fun setEmail(email: Email){
+    fun setEmail(email: String){
         this.email = email;
     }
-    fun setTelefone(telefone: Phone){
+    fun setTelefone(telefone: String){
         this.telefone = telefone;
     }
     fun setCpf(cpf: String){

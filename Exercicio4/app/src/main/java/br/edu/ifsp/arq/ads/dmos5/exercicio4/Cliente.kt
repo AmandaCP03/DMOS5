@@ -1,0 +1,45 @@
+package br.edu.ifsp.arq.ads.dmos5.exercicio4
+
+import android.provider.ContactsContract.CommonDataKinds.Email
+import android.provider.ContactsContract.CommonDataKinds.Phone
+
+class Cliente(private var nome: String, private var email: Email, private var telefone: Phone, private var cpf: String, private var endereco: String, private var cidade: String) {
+
+    fun getNome(): String{
+        return nome
+    }
+    fun getEmail(): Email{
+        return email
+    }
+    fun getTelefone(): Phone{
+        return telefone
+    }
+    fun getCpf(): String{
+        return cpf
+    }
+    fun getEndereco(): String{
+        return endereco
+    }
+    fun getCidade(): String{
+        return cidade
+    }
+
+    fun setNome(nome: String){
+        this.nome = nome;
+    }
+    fun setEmail(email: Email){
+        this.email = email;
+    }
+    fun setTelefone(telefone: Phone){
+        this.telefone = telefone;
+    }
+    fun setCpf(cpf: String){
+        this.cpf = cpf;
+    }
+    fun setEndereco(endereco: String){
+        this.endereco = endereco;
+    }
+    fun setCidade(cidade: String){
+        this.cidade = cidade;
+    }
+}

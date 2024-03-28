@@ -7,4 +7,5 @@
     <string name="txt_cpf">CPF</string>
     <string name="txt_endereco">Endereco</string>
     <string name="txt_cidade">Cidade</string>
+    <string name="txt_titulo">Preencha seus dados</string>
 </resources>

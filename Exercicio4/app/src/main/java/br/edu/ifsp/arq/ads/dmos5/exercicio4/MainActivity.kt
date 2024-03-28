@@ -84,9 +84,10 @@ class MainActivity : AppCompatActivity() {
         val endereco: String = edtEndereco.text.toString()
         val cidade: String = edtCidade.text.toString()
 
+
         // enviar um objeto da classe Cliente
         val cliente = Cliente(nome, email, telefone, cpf, endereco, cidade)
-        intent.putExtra("cliente", cliente)
+        intent.putExtra("cliente",cliente)
         startActivity(intent)
     }
 }

@@ -2,8 +2,9 @@ package br.edu.ifsp.arq.ads.dmos5.exercicio4
 
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.provider.ContactsContract.CommonDataKinds.Phone
+import java.io.Serializable
 
-class Cliente(private var nome: String, private var email: String, private var telefone: String, private var cpf: String, private var endereco: String, private var cidade: String) {
+class Cliente(private var nome: String, private var email: String, private var telefone: String, private var cpf: String, private var endereco: String, private var cidade: String): Serializable {
 
     fun getNome(): String{
         return nome
